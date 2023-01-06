@@ -23,7 +23,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore -o $(Build.ArtifactStagingDirectory) -c Release
+      run: dotnet build --no-restore -o ./publish -c Release
 #     - name: Publish GitHub Release Artifacts
 #       uses: SierraSoftworks/gh-releases@v1.0.7
 #       with:
